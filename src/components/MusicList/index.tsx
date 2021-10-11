@@ -16,7 +16,7 @@ const MusicList = ({ musics }: MusicListProps) => (
       <h2>Músicas sugeridas</h2>
     </S.Heading>
     <S.List>
-      {musics.length ? (
+      {musics ? (
         musics.map((music, index) => <S.Item key={index}>{music.name}</S.Item>)
       ) : (
         <span>Nenhuma música encontrada!</span>
