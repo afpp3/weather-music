@@ -5,7 +5,8 @@ export const Wrapper = styled.header`
   align-items: center;
   justify-content: center;
   height: 8rem;
-  background-color: #75e6da;
+  background-color: #050a30;
+  color: #d4f1f4;
 `
 
 export const Title = styled.h1``
