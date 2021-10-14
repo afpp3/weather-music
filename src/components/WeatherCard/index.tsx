@@ -2,17 +2,19 @@ import * as S from './styles'
 
 type WeatherCardProps = {
   weather: string
-  description: string
+  city: string
 }
 
-const WeatherCard = ({ weather, description }: WeatherCardProps) => (
-  <S.Wrapper>
-    <S.Weather>
-      {weather}
-      <span>℃</span>
-    </S.Weather>
-    <S.Description>{description}</S.Description>
-  </S.Wrapper>
-)
+const WeatherCard = ({ weather, city }: WeatherCardProps) => {
+  return (
+    <S.Wrapper>
+      <S.Weather>
+        {weather}
+        {!!weather && <span>℃</span>}
+      </S.Weather>
+      <S.Description>{city}</S.Description>
+    </S.Wrapper>
+  )
+}
 
 export default WeatherCard

@@ -11,14 +11,14 @@ export const Wrapper = styled.div`
 
   background-color: #050a30;
   color: #d4f1f4;
-  width: 16rem;
-  height: 16rem;
+  width: 14rem;
+  height: 14rem;
 
   box-shadow: 0 2px 4px #000;
 `
 
 export const Weather = styled.h3`
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   text-transform: uppercase;
 
   span {
@@ -29,5 +29,5 @@ export const Weather = styled.h3`
 
 export const Description = styled.p`
   text-transform: capitalize;
-  font-size: 2rem;
+  font-size: 1.8rem;
 `
