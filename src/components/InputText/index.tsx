@@ -5,12 +5,14 @@ type InputTextProps = {
   onInput?: (value: string) => void
   initialValue?: string
   placeholder?: string
+  error?: string
 } & InputHTMLAttributes<HTMLInputElement>
 
 const InputText = ({
   initialValue = '',
   onInput,
   placeholder,
+  error,
   ...props
 }: InputTextProps) => {
   const [value, setValue] = useState(initialValue)
@@ -23,13 +25,16 @@ const InputText = ({
   }
 
   return (
-    <S.Input
-      type="text"
-      value={value}
-      onChange={handleChange}
-      placeholder={placeholder}
-      {...props}
-    />
+    <S.Wrapper>
+      <S.Input
+        type="text"
+        value={value}
+        onChange={handleChange}
+        placeholder={placeholder}
+        {...props}
+      />
+      {!!error && <S.Error>{error}</S.Error>}
+    </S.Wrapper>
   )
 }
 export default InputText
