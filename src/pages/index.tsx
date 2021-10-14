@@ -1,5 +1,11 @@
+import { MusicsProvider } from 'contexts/MusicContext'
+
 import Home from 'template/Home'
 
 export default function Index() {
-  return <Home />
+  return (
+    <MusicsProvider>
+      <Home />
+    </MusicsProvider>
+  )
 }

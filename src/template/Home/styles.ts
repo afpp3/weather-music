@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 
-import * as InputStyles from 'components/InputText/styles'
-
 export const Container = styled.section`
-  max-width: 90vw;
+  max-width: 85vw;
   margin-left: auto;
   margin-right: auto;
+  height: 100vh;
 `
 
 export const Sections = styled.section`
@@ -16,15 +15,13 @@ export const Sections = styled.section`
 `
 
 export const SearchSection = styled.form`
-  ${InputStyles.Input} {
-    margin-right: 1.6rem;
-  }
-
   margin-top: 5rem;
   margin-bottom: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.4rem;
 `
 
 export const WeatherSection = styled(Sections)``
