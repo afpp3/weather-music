@@ -70,8 +70,7 @@ export function MusicsProvider({ children }: MusicProviderProps) {
         {
           headers: {
             'x-rapidapi-host': 'shazam-core.p.rapidapi.com',
-            'x-rapidapi-key':
-              '3674c8e4a8mshcde128069c68dfcp197139jsn8a1fa096d7d1'
+            'x-rapidapi-key': `${process.env.NEXT_PUBLIC_RAPID_API_KEY}`
           }
         }
       )
